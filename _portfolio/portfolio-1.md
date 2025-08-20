@@ -1,7 +1,47 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "학생 성적 관리 시스템"
+excerpt: "Java를 활용한 파일 기반 성적 관리 시스템 개발<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+## 프로젝트 개요
+
+Java를 활용한 학생 성적 관리 시스템으로, 파일 기반 데이터 처리와 자동 학점 계산 기능을 구현했습니다.
+
+### 주요 기능
+
+- **파일 I/O 처리**: 텍스트 파일에서 학생 정보 읽기
+- **성적 계산**: 중간/기말/과제/출석 점수를 종합한 총점 및 평균 계산
+- **학점 자동 부여**: 상대평가 기반 학점 시스템
+- **통계 분석**: 전체 평균, 학점별 분포 등 통계 정보 제공
+
+### 기술 스택
+
+- **언어**: Java
+- **개발 환경**: Eclipse IDE
+- **파일 처리**: BufferedReader, FileReader
+- **디자인 패턴**: MVC 패턴 적용
+
+### 코드 구조
+
+```
+gradeprj/
+├── Main.java           # 프로그램 진입점
+├── StudentManager.java # 학생 관리 로직
+├── Student.java        # 학생 데이터 모델
+└── Score*.java         # 추가 기능 클래스들
+```
+
+### 학습 포인트
+
+1. **객체지향 설계**: 책임 분리와 캡슐화
+2. **예외 처리**: 파일 I/O 관련 예외 처리
+3. **알고리즘**: 상대평가 학점 계산 로직
+4. **데이터 구조**: 배열을 활용한 데이터 관리
+
+### 개선 계획
+
+- 데이터베이스 연동 (MySQL/PostgreSQL)
+- 웹 인터페이스 추가 (Spring Boot)
+- RESTful API 구현
+- 단위 테스트 추가 (JUnit)
